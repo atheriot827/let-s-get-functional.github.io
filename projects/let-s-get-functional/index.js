@@ -27,9 +27,23 @@ var maleCount = function(array) {
 
 };
 
-var femaleCount;
+var femaleCount = function(array) {
 
-var oldestCustomer;
+}
+
+var femaleCountWithReduce = function(array) {
+    let numFemales
+}
+
+
+
+
+
+
+
+var oldestCustomer = function(array) {  //use reduce method with no seed
+
+}
 
 var youngestCustomer;
 
