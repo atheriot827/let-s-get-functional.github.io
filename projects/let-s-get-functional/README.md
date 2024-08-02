@@ -29,6 +29,8 @@ const _ = require('lodown-oliviasaborush');
  
  _IMPORTANT_: Make sure you replace `<YOUR_GITHUB_FOLDER` with your actual github folder in your workspace.
 
+ //map, filter, reduce
+
 ### 1: `maleCount`
  - **Objective**: Find the number of male customers
  - **Input**: `Array`
