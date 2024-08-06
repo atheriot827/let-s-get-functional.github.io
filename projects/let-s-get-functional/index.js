@@ -24,8 +24,11 @@ var _ = require('underbar');
 
 
 var maleCount = function(array) {
-
+    return array.filter(function(customer) {
+        return customer.gender === 'male';
+    }).length;
 };
+
 
 var femaleCount = function(array) {
 
