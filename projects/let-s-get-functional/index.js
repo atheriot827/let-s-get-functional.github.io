@@ -73,7 +73,19 @@ var averageBalance = function(array) {
 }
 
 
-var firstLetterCount;
+var firstLetterCount = function(array, letter) {
+    //convert the letter to lowercase for case sensitive comparison
+    var lowerCaseLetter = letter.toLowerCase();
+
+    //filter the array to find names that start with the given letter 
+    var count = array.filter(function(customer) {
+        //convert the first letter of the name to lowercase and compare
+        return customer.name[0].toLowerCase() === lowerCaseLetter;
+    }).length;
+
+    //return the count
+    return count;
+}
 
 var friendFirstLetterCount;
 
