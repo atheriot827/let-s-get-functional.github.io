@@ -57,7 +57,7 @@ var youngestCustomer = function(array) {
     }, array[0]).name;
 }
 
-var averageBalance;
+var averageBalance = function()
 
 var firstLetterCount;
 
