@@ -124,7 +124,7 @@ var friendsCount = function(array, name) {
 
         //check if any of the friends names match the given name
         for(var j = 0; j < friends.length; j++) {
-            if(friends[j].name === name) {\
+            if(friends[j].name === name) {
                 //add the customers name to the result array
                 result.push(customer.name);
                 //stop checking this customer once we find a match
