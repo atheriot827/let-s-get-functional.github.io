@@ -31,24 +31,31 @@ var maleCount = function(array) {
 
 
 var femaleCount = function(array) {
-
-}
-
-var femaleCountWithReduce = function(array) {
-    let numFemales
-}
-
-
-
-
-
+   return array.reduce(function(count, customer) {
+    return customer.gender === 'female' ? count + 1 : count;
+   }, 0);
+};
 
 
 var oldestCustomer = function(array) {  //use reduce method with no seed
-
+    return array.reduce(function(oldest, customer) {
+        if(customer.age > oldest.age) {
+            return customer;
+        } else {
+            return oldest;
+        }
+    }, array[0]).name;
 }
 
-var youngestCustomer;
+var youngestCustomer = function(array) {
+    return array.reduce(function(youngest, customer) {
+        if(customer.age < youngest.age) {
+            return customer;
+        } else {
+            return youngest;
+        }
+    }, array[0]).name;
+}
 
 var averageBalance;
 
