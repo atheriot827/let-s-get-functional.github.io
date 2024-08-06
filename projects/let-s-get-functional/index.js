@@ -57,7 +57,21 @@ var youngestCustomer = function(array) {
     }, array[0]).name;
 }
 
-var averageBalance = function()
+var averageBalance = function(array) {
+    //check if array is empty
+    if (array.length === 0) return 0;
+
+    //calculate the total balance using reduce
+    var totalBalance = array.reduce(function(acc, customer) {
+        //remove the dollar sign and commas, the convert to a floating-point number
+        var balance = parseFloat(customer.balance.replace(/[$,]/g, ''))
+    return acc + balance;
+    }, 0);
+
+    //calculate and return average balance
+    return totalBalance / array.length;
+}
+
 
 var firstLetterCount;
 
